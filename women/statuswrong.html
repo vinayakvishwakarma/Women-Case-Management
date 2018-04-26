@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>legal rights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .style{
+    width: 500px;
+	
+    margin: 0 auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.style fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px grey;
+    padding: 20px;
+    background:rgb(240,240,240);
+    box-shadow: inset 0px 0px 15px black;
+    -moz-box-shadow: inset 0px 0px 15px black;
+    -webkit-box-shadow: inset 0px 0px 15px black;
+}
+.style fieldset legend{
+    color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: rgb(50,50,50);
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size:18px;
+}
+.style input[type=text],
+.style input[type=password],
+.style textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px grey;
+    outline: none;
+    color: black;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px black;
+    -moz-box-shadow: inset 1px 1px 4px black;
+    -webkit-box-shadow: inset 1px 1px 4px black;
+    background:white;
+    width:50%;
+}
+.style input[type=submit],
+.style input[type=button]{
+    background: rgb(50,50,50);
+    border: 1px grey;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    box-shadow: inset -1px -1px 3px black;
+    -moz-box-shadow: inset -1px -1px 3px black;
+    -webkit-box-shadow: inset -1px -1px 3px black;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;    
+    font-weight: bold;
+}
+.required{
+    color:red;
+    font-weight:normal;
+}
+  </style>
+  </head>
+  <body background="hd.jpg">
+<a href="front.html"><img src="helpline.jpg" style="width:210px;height:100px;"></a>
+<img src="my gov logo.png" style="width:300px;height:100px;">
+<img src="swatch.jpg" align="right" style="width:250px;height:100px;" ></a>
+<img src="satyamev.jpg"width="80"height="100" align="right">
+<nav class="navbar navbar-inverse"> 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	  
+        <li><a href="front.html">HOME</a></li>
+        <li><a href="complain.html">COMPLAINT FORM</a></li>
+        <li class="active"><a href="status.html">COMPLAINT STATUS</a></li>
+		     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">LEGAL RIGHTS<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+           <li><a href="women welfare.html">WOMEN WELFARE ACTS</a></li>
+          <li><a href="women related.html">WOMEN-RELATED LEGISLATIONS</a></li>
+         
+        </ul>
+      </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="adminlogin.php"><span class="glyphicon glyphicon-log-in"></span>ADMIN LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 style="text-align:center">Complain Status </h1>
+<div class="style" >
+<form action="status1.php" method="POST">
+  <fieldset>
+    <legend>status</legend>
+	<p style="color:red;">Enter correct complain no.</p>
+    <label for="complain_no"><b>COMPLAIN NO</b></label>
+      <input type="text" placeholder="" name="complain_no" required><br>
+    <input type="submit" value="CHECK">
+  </fieldset>
+</form>
+</div>
+</body>
+</html>
